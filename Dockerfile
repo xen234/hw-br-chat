@@ -9,8 +9,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the application files
 COPY . .
 
-# Expose the port
-EXPOSE 50010
+# Set the environment variables for the server port
+ENV SERVER_PORT=50051
+
+# Expose the server port
+EXPOSE ${SERVER_PORT}
 
 # Run the application
 CMD [ "python", "server_main.py" ]
