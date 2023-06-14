@@ -5,13 +5,13 @@ from datetime import datetime
 from colorama import Fore, init, Back
 
 init()
-SERVER_HOST = "127.0.0.1"
-SERVER_PORT = 50010
+HOST = "127.0.0.1"
+PORT = 50010
 separator_token = "<SEP>"
 
 s = socket.socket()
-print(f"Connecting to {SERVER_HOST}:{SERVER_PORT}...")
-s.connect((SERVER_HOST, SERVER_PORT))
+print(f"Connecting to {HOST}:{PORT}...")
+s.connect((HOST, PORT))
 print("Connected.")
 name = input("Identify yourself: ")
 
