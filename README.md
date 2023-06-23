@@ -1,5 +1,5 @@
 # hw-br-chat
-HW-3 python broker chat
+HW-3 python redis chat
 Simple console chat:
 1. run client to connect
 2. every user in chatroom recieves sent messages 
